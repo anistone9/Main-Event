@@ -1,3 +1,4 @@
+/*Universal selector*/
 * {
     font-family: Georgia, 'Times New Roman', Times, serif;
     box-sizing: border-box;
@@ -84,6 +85,7 @@ main {
     margin-bottom: 45px;
 }
 
+/*Class selector and background image for subsection*/
 .fabric-banner {
     background-image: url("./assets/flowers.jpg");
     background-color: var(--secondary);
