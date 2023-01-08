@@ -1,0 +1,119 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+/*primary color palette */
+:root {
+    --primary: rgb(19, 102, 144);
+    --secondary: rgba(113, 177, 191, 0.717);
+    --accent: rgba(2, 67, 104, 0.642);
+    --dark: rgba(155, 197, 216, 0.361);
+    --light: #fffff0;
+    --darker: rgb(38, 48, 58);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: var(--darker);
+    line-height: 1.5;
+    background-color: var(--light);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    padding: 15px
+}
+
+header {
+    padding: 15px 5% 15px 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background: var(--primary);
+    background: linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
+}
+
+header h1 {
+    color: var(--light);
+    padding: 15px 1% 5px 1%;
+    margin: 0;
+    font-size: 2vw;
+    line-height: 1.5;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+nav a {
+    padding: 15px 15px 0;
+    color: var(--accent);
+    margin-right: 3px;
+    background-image: linear-gradient(270deg, var(--secondary) 0%, var(--secondary) 100%);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    background-size: 100% 100%;
+    color: var(--light);
+}
+
+nav a:last-child {
+    margin-right: 0;
+}
+
+main {
+    margin-top: 20px;
+    margin-bottom: 45px;
+}
+
+.fabric-banner {
+    background-image: url("./assets/flowers.jpg");
+    background-color: var(--secondary);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 100%;
+    min-height: 40vh;
+    color: var(--primary);
+    padding: 1% 1%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    text-align: left;
+}
+
+.fabric-banner div {
+    flex: 0 0 90%;
+}
+
+.planning {
+    margin: 15px;
+    padding: 5px 5px;
+}
+
+footer {
+    background-color: var(--secondary);
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.9rem;
+}
